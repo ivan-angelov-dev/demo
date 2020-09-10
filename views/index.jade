@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  form(action="http://localhost:3000/upload", method="post", enctype="multipart/form-data", class="dropzone" )
+    input(type="file", name="image")
+    input(type="submit", name="upload")
+
